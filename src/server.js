@@ -56,6 +56,8 @@ app.use(
   }),
 );
 
+app.options("*", cors());
+
 // ─── Middleware ──────────────────────────────────────────────────────────────
 
 app.use(requestLogger);
